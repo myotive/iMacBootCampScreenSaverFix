@@ -1,0 +1,8 @@
+c:\users\yotivm\documents\visual studio 2012\Projects\ScreenSaverWorkAround\ScreenSaverWorkAround\bin\Debug\ScreenSaverWorkAround.exe.config
+c:\users\yotivm\documents\visual studio 2012\Projects\ScreenSaverWorkAround\ScreenSaverWorkAround\bin\Debug\ScreenSaverWorkAround.exe
+c:\users\yotivm\documents\visual studio 2012\Projects\ScreenSaverWorkAround\ScreenSaverWorkAround\bin\Debug\ScreenSaverWorkAround.pdb
+c:\users\yotivm\documents\visual studio 2012\Projects\ScreenSaverWorkAround\ScreenSaverWorkAround\obj\Debug\ScreenSaverWorkAround.Form1.resources
+c:\users\yotivm\documents\visual studio 2012\Projects\ScreenSaverWorkAround\ScreenSaverWorkAround\obj\Debug\ScreenSaverWorkAround.Properties.Resources.resources
+c:\users\yotivm\documents\visual studio 2012\Projects\ScreenSaverWorkAround\ScreenSaverWorkAround\obj\Debug\ScreenSaverWorkAround.csproj.GenerateResource.Cache
+c:\users\yotivm\documents\visual studio 2012\Projects\ScreenSaverWorkAround\ScreenSaverWorkAround\obj\Debug\ScreenSaverWorkAround.exe
+c:\users\yotivm\documents\visual studio 2012\Projects\ScreenSaverWorkAround\ScreenSaverWorkAround\obj\Debug\ScreenSaverWorkAround.pdb
