@@ -7,6 +7,9 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+using System.Collections;
+using System.Collections.Specialized;
+
 namespace ScreenSaverWorkAround
 {
     using System;
@@ -38,7 +41,9 @@ namespace ScreenSaverWorkAround
 
            this.lblSaved.Visible = false;
            this.cboTimes.DataSource = this.GetTimes();
-           this.LoadCheckBoxes();
+           this.listBox1.DataSource = Properties.Settings.Default.ScheduleTimes;
+           
+            this.LoadCheckBoxes();
            this.LoadSelectedTime();
         }
 
@@ -94,6 +99,7 @@ namespace ScreenSaverWorkAround
             Properties.Settings.Default.Save();
 
             FadeConfirmLabel();
+            this.RefreshListBox();
         }
 
         private void FadeConfirmLabel()
@@ -115,7 +121,8 @@ namespace ScreenSaverWorkAround
 
         private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            this.WindowState = FormWindowState.Normal;
+            this.Opacity = 1.0f;
+            this.ShowInTaskbar = false;
         }
 
         private bool showBallonTipOnlyOnce = true;
@@ -125,7 +132,7 @@ namespace ScreenSaverWorkAround
         {
             if (!contextMenuExitClicked)
             {
-                this.WindowState = FormWindowState.Minimized;
+                this.Opacity = 0.0f;
                 this.ShowInTaskbar = false;
                 if (showBallonTipOnlyOnce)
                 {
@@ -142,5 +149,48 @@ namespace ScreenSaverWorkAround
             contextMenuExitClicked = true;
             this.Close();
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var item = cboTimes.Text;
+                this.AddScheduledTime(item);
+
+                this.RefreshListBox();
+            }
+            catch 
+            {
+            }
+        }
+
+        private void RefreshListBox()
+        {
+            Properties.Settings.Default.Save();
+            listBox1.DataSource = null;
+            listBox1.DataSource = Properties.Settings.Default.ScheduleTimes;
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            var item = listBox1.SelectedItem;
+            Properties.Settings.Default.ScheduleTimes.Remove(item.ToString());
+            this.RefreshListBox();
+        }
+
+        private void AddScheduledTime(string item)
+        {
+            if(Properties.Settings.Default.ScheduleTimes == null)
+            {
+                var collection = new StringCollection {item};
+                Properties.Settings.Default.ScheduleTimes = collection;
+            }
+            else if(Properties.Settings.Default.ScheduleTimes.IndexOf(item) == -1)
+            {
+                Properties.Settings.Default.ScheduleTimes.Add(item);
+                ArrayList.Adapter(Properties.Settings.Default.ScheduleTimes).Sort();
+            }
+        }
+
     }
 }

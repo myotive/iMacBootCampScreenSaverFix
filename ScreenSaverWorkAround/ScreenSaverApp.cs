@@ -8,16 +8,18 @@
     {
         public static void App()
         {
+            var nimCommandLocation = Properties.Settings.Default.NirCmd;
+
             while (true)
             {
                 if (CanRunToday())
                 {
-                    var selectedTime = Properties.Settings.Default.SelectedTime;
                     var now = new TimeSpan(DateTime.Now.Hour, DateTime.Now.Minute, 0);
-                    if (now == selectedTime)
+
+                    if (Properties.Settings.Default.ScheduleTimes.IndexOf(now.ToString()) > 0)
                     {
-                        Process.Start(@"C:\Program Files (x86)\NimCmd\nircmd.exe", "screensaver");
-                        Thread.Sleep(selectedTime.Add(new TimeSpan(0, 0, 1, 0)));
+                        Process.Start(nimCommandLocation, "screensaver");
+                        Thread.Sleep(now.Add(new TimeSpan(0, 0, 1, 0)));
                     }
 
                     Thread.Sleep(10000);

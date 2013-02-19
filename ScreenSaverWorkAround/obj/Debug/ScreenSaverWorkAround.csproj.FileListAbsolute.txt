@@ -6,3 +6,12 @@ c:\users\yotivm\documents\visual studio 2012\Projects\ScreenSaverWorkAround\Scre
 c:\users\yotivm\documents\visual studio 2012\Projects\ScreenSaverWorkAround\ScreenSaverWorkAround\obj\Debug\ScreenSaverWorkAround.csproj.GenerateResource.Cache
 c:\users\yotivm\documents\visual studio 2012\Projects\ScreenSaverWorkAround\ScreenSaverWorkAround\obj\Debug\ScreenSaverWorkAround.exe
 c:\users\yotivm\documents\visual studio 2012\Projects\ScreenSaverWorkAround\ScreenSaverWorkAround\obj\Debug\ScreenSaverWorkAround.pdb
+C:\Users\Michael\Documents\GitHub\iMacBootCampScreenSaverFix\ScreenSaverWorkAround\bin\Debug\ScreenSaverWorkAround.exe.config
+C:\Users\Michael\Documents\GitHub\iMacBootCampScreenSaverFix\ScreenSaverWorkAround\obj\Debug\ScreenSaverWorkAround.exe
+C:\Users\Michael\Documents\GitHub\iMacBootCampScreenSaverFix\ScreenSaverWorkAround\obj\Debug\ScreenSaverWorkAround.pdb
+C:\Users\Michael\Documents\GitHub\iMacBootCampScreenSaverFix\ScreenSaverWorkAround\bin\Debug\ScreenSaverWorkAround.exe
+C:\Users\Michael\Documents\GitHub\iMacBootCampScreenSaverFix\ScreenSaverWorkAround\bin\Debug\ScreenSaverWorkAround.pdb
+C:\Users\Michael\Documents\GitHub\iMacBootCampScreenSaverFix\ScreenSaverWorkAround\obj\Debug\ScreenSaverWorkAround.csprojResolveAssemblyReference.cache
+C:\Users\Michael\Documents\GitHub\iMacBootCampScreenSaverFix\ScreenSaverWorkAround\obj\Debug\ScreenSaverWorkAround.Form1.resources
+C:\Users\Michael\Documents\GitHub\iMacBootCampScreenSaverFix\ScreenSaverWorkAround\obj\Debug\ScreenSaverWorkAround.Properties.Resources.resources
+C:\Users\Michael\Documents\GitHub\iMacBootCampScreenSaverFix\ScreenSaverWorkAround\obj\Debug\ScreenSaverWorkAround.csproj.GenerateResource.Cache
